@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+body {
+    background-color: aqua;
+    margin: 0;
+    display: flex;
+   
+    flex-direction: column;
+
+    font-family: "Ubuntu", sans-serif;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
+.titulo_principal{
+    background-color: black;
+    height: 50px; /* Asegura que el cuerpo tome toda la altura de la ventana */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 1367px;
+    color: white;
+
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    border-radius: 5px;
+}
+#container{
+     background-color: rgba(44, 43, 33, 0.367);;
+ 
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 15px;
+}
+#boxContainer1{
+  display: flex;
+    flex-direction: row;
+    width: 610px;
+}
+#boxContainer1 > h2,h3{
+  
+    color: #ff8c00;
+    margin: 15px;
+}
+#boxContainer1 > h3 {
+    font-size: small;
+}
+
+#infoContainer{
+   
+    text-align:start;
+    
+}
+
+#boxContainer2{
+  
+    height: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+#boxContainer2 > button{
+    padding: 0;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+}
+#barra_de_tiempo{
+    background-color: #ff8c0077;
+    width: 610px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+#tiempo_de_carga{
+    background-color: #ff8c00;
+    width: 310px;
+    height: 10px;
+    border-radius: 5px;
+    overflow:visible;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#puntero_redondo{
+    background-color: #ff8c00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+}
+
+#boxContainer2 > button > i {
+    color: #ff8c00;
+    font-size: 80px;
+}
+
+#boxContainer2 > button > i:hover {
+    color: #c15d06;
+    font-size: 80px;
+}
