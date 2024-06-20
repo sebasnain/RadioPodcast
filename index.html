@@ -9,6 +9,9 @@
     <title>RadioPodcast</title>
 </head>
 <body>
+  <audio id="mi_audio">
+  <source src="https://anchor.fm/s/5c775b94/podcast/play/36797149/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2021-6-6%2F5aafebba-13ac-4a96-829b-7a8517c936f3.mp3" type="audio/mpeg">
+  </audio>
     <h1 class="titulo_principal">Radio Pódcast</h1>
   <div id="container">
    <image class="img" src="https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/15413261/15413261-1621889246332-242112fa009f7.jpg"></image>
@@ -16,7 +19,9 @@
     <div id="boxContainer1">
         <h2>Título del Pódcast</h2>
         <h3><i class="fa fa-calendar" aria-hidden="true"></i> Fecha: 00/00/00</h3>
-        <h3><i class="fas fa-clock" aria-hidden="true"></i> Duración</h3>
+        <h3 ><i class="fas fa-clock" aria-hidden="true"></i> Duración</h3>
+        <h3 id="duracionText"></h3>
+
        </div>
        <div id="boxTitulo">
          <h1>Nombre del Pódcast</h1>
@@ -25,22 +30,22 @@
         <h6>texto de la descripción </h6>
        </div>
        <div id="barra_de_tiempo">
-          <div id="tiempo_de_carga"> <div id="puntero_redondo"></div></div>
+          <div id="tiempo_de_carga" class="barraCargada"> <div id="puntero_redondo"></div></div>
        </div>
-       <div id="minutos_de_reproduccion">
-        <h3>00:00</h3>
+       <div >
+        <h3 id="minutos_de_reproduccion">00:00</h3>
        </div>
   </div>
  
    <div id="boxContainer2">
     <button id="stop"><i class="fas fa-stop-circle" aria-hidden="true"></i></button>
-    <button id="play_pausa"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
-    
-
-
-   </div>
+    <button id="play_pausa" ><i id="icono" class="fa fa-play-circle" aria-hidden="true"></i></button>
+    <input type="range" id="volume_control" min="0" max="1" step="0.01" value="1">
+    <i class="fa fa-volume-up" aria-hidden="true"></i>
+    </div>
+   
   </div>
 
-    
+    <script src="app.js"></script>
 </body>
 </html>

@@ -91,7 +91,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 
 #tiempo_de_carga{
     background-color: #ff8c00;
-    width: 310px;
+    width: 0%;
     height: 10px;
     border-radius: 5px;
     overflow:visible;
@@ -105,8 +105,9 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    
+    box-sizing: border-box;
 }
+
 
 #boxContainer2 > button > i {
     color: #ff8c00;
@@ -116,4 +117,38 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 #boxContainer2 > button > i:hover {
     color: #c15d06;
     font-size: 80px;
+    cursor: pointer;
 }
+
+#boxContainer2 > i {
+  
+    color: #ff8c00;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+#volume_control {
+    -webkit-appearance: none;
+    appearance: none;
+    background:#ff8c00;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 30px;
+    cursor: pointer;
+    height: 7px;
+    border-radius: 4px;
+    
+}
+
+#volume_control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ff8c00;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
